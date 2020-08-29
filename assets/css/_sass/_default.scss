@@ -1,0 +1,35 @@
+/*
+  Site container
+*/
+
+.container {
+  width: $container-width;
+  min-height: 100vh;
+}
+.container a {
+  text-decoration: underline;
+}
+.posts-wrapper {
+  padding-top: $header-thickness+10px;
+  display: block;
+  width: $container-width;
+}
+.posts-wrapper h1 {
+  margin: 20px 0px 5px;
+  font-size: 2.5em;
+}
+.posts-wrapper p {
+  font-size: 1em;
+}
+@media (max-width: $container-width) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+  .posts-wrapper {
+    padding-top: $header-thickness+10px;
+    margin: 0;
+    display: block;
+    width: 100vw;
+  }
+}

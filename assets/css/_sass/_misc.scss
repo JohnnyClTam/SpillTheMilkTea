@@ -1,0 +1,124 @@
+#contactform {
+	width: 100%;
+}
+.table-row {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.table-column {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+.table-cell{
+	display: inline-block;
+	width: 100%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+.background {
+	width: 100vw;
+	height: 100%;
+}
+input {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+	width: 80%;
+	font-size: 1em;
+}
+input[type=text],input[type=email]{
+	background-color: rgba(0, 0, 0, 0);
+    color: black;
+    outline: none;
+    min-height: 2em;
+}
+textarea {
+    border: none;
+	    -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+	    -moz-box-sizing: border-box; /* FF1+ */
+    box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+	max-width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+    color: black;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    resize: none;
+    font-size: 1em;
+  	font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+@media (min-width: $container-width) {
+	.split {
+		width: 40vw;
+		height: 30vw;
+		margin-top: 5vw;
+		margin-bottom: 5vw;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.flex-reverse {
+		flex-direction: row-reverse;
+	}
+	.quarter {
+		width: 20vw;
+		align-items: stretch;
+	}
+	.split-height {
+		width: 40vw;
+		height: 50vw;
+		margin-top: 5vw;
+		margin-bottom: 5vw;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	textarea {
+	    width: 90%;
+	}
+	.episode-wrapper {
+		width: 75%;
+	}
+	.text-margin p {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		display: inline-block;
+		position: relative;
+	}
+}
+@media (max-width: $container-width) {
+	.split, .split-height {
+		min-width: 100vw;
+		min-height: 100vw;
+		width: 100vw;
+		height: 100vw;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.table-row {
+		flex-direction: column;
+	}
+	.mobile-margins p {
+		margin-left: 4vw;
+		margin-right: 4vw;
+	}
+	textarea {
+	    width: 80%;
+	}
+	.quarter {
+		padding-left: 2vw;
+		padding-right: 2vw;
+	}
+}

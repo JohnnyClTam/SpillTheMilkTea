@@ -1,0 +1,53 @@
+---
+layout: misc
+title: Podcast
+---
+
+<div class="background">
+  <div class="table-row">
+    <div class="table-cell">
+      <h1 style="font-size: 2em;">Episodes</h1>
+    </div>
+  </div>
+
+<div class="table-column">
+  <div class="table-cell mobile-margin episode-wrapper">
+    {% for post in site.categories.episodes %}
+    <a href="{{ site.github.url }}{{ post.url }}">
+      <div class="featured-posts" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
+        <h2><span>{{ post.title }}</span></h2>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<!--
+  {% for post in paginator.posts %}
+
+  <article>
+    <a href="{{ site.github.url }}{{ post.url }}">
+      <div class="featured-posts" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
+        <h2><span>{{ post.title }}</span></h2>
+      </div>
+    </a>
+  </article>
+
+  {% endfor %}-->
+
+  <!-- Pagination links --><!--
+  <div class="pagination">
+    {% if paginator.next_page %}
+      <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
+    {% else %}
+      <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+      <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
+      {% else %}
+        <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
+    {% endif %}
+  </div>-->
+
+  </div>
+</div>
