@@ -7,9 +7,11 @@ title: Contact
 	<div class="table-row">
 		<div class="table-cell split-height" style="background-color: #e6d2b5;">
 			<div class="table-column mobile-margins">
-			  	<div class="table-cell">
-					<h1 style="font-size:2em;padding-left:5vw; padding-right:5vw;">Got a question or idea to share?<br>Contact us below!</h1>
+			  	<div class="table-cell text-margin">
+					<h1 style="font-size: ;padding-left:5vw; padding-right:5vw;">Got a question or idea to share?<br>Contact us below!</h1>
 					<p style="text-align:center; font-size:1em; padding-left:5vw; padding-right:5vw;">Interested in learning more about me, my work or how we can collaborate on an upcoming project? Feel free to reach out anytime, I would be more than happy to chat.</p>
+				</div>
+				<div class="table-cell text-margin">
 					<form id="contactform" action="https://formspree.io/xlepkqbn" method="POST">
 						<div class="table-row" style="padding-left:5vw; padding-right:5vw;">
 						    <div class="table-cell">

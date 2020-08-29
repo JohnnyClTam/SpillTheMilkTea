@@ -31,7 +31,7 @@
 input {
 	border: none;
 	outline: none;
-	border-bottom: 2px solid black;
+	border-bottom: 0.25px solid black;
 	width: 80%;
 	font-size: 1em;
 }
@@ -52,10 +52,10 @@ textarea {
     color: black;
     outline: none;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 0.25px solid black;
     resize: none;
     font-size: 1em;
-  	font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+  	font-family: 'Roboto', sans-serif;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
@@ -87,6 +87,7 @@ textarea {
 	}
 	textarea {
 	    width: 90%;
+	    height: 8vw;
 	}
 	.episode-wrapper {
 		width: 75%;
@@ -97,13 +98,23 @@ textarea {
 		display: inline-block;
 		position: relative;
 	}
+	.text-margin h1 {
+		font-size:2em;
+	}
 }
 @media (max-width: $container-width) {
-	.split, .split-height {
+	.split {
 		min-width: 100vw;
 		min-height: 100vw;
 		width: 100vw;
 		height: 100vw;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.split-height {
+		min-width: 100vw;
+		min-height: 100vw;
+		width: 100vw;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
@@ -116,9 +127,21 @@ textarea {
 	}
 	textarea {
 	    width: 80%;
+	    height: 20vw;
 	}
 	.quarter {
 		padding-left: 2vw;
 		padding-right: 2vw;
+	}
+	.text-margin h1 {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		font-size:1.5em;
+	}
+	.text-margin p {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		display: inline-block;
+		position: relative;
 	}
 }
